@@ -1,18 +1,18 @@
-import { ProjectDetailsMain } from "@/lib/types";
+import { ProjectDetails } from "@/lib/types";
 
 // Project data
-export const projectData: { [key: string]: ProjectDetailsMain } = {
+export const projectData: { [key: string]: ProjectDetails } = {
   bizzlisting: {
+    slug:'bizzlisting',
     name: "Bizzlisting",
+    image: '/bizzlisting/image.png',
+
     description:
       "Business directory web application for local businesses to get online presence.",
     longDescription: `
         The web revolves around data, so in this project my major role was to create data scrapping which i did using Apify. Enhanced UI for premium looks and feel. 
   
-        ### Key Features
-        - Responsive design that works seamlessly across all devicesproject showcase with detailed project pagesices and providers pages
-        - Added SEO for better ranking
-        - Elegant, premium and rich UI enhancements.
+        Responsive design that works seamlessly across all devicesproject showcase with detailed project pagesices and providers pages, Added SEO for better ranking,Elegant, premium and rich UI enhancements.
       `,
     technologies: [
       "Next.js",
@@ -23,11 +23,12 @@ export const projectData: { [key: string]: ProjectDetailsMain } = {
       "Shadcn UI",
       "Zustand",
       "Data Scrapping",
+      "Prisma",
       "Apify",
       "SEO",
     ],
     links: {
-      github: "",
+      repo: "",
       live: "https://www.bizzlisting.com/Delhi",
     },
     dates: "March - 2025",
@@ -53,12 +54,7 @@ export const projectData: { [key: string]: ProjectDetailsMain } = {
         src: "/bizzlisting/image copy 4.png",
         alt: "Beautiful Footer",
         description: "Footer with Dynamic City data.",
-      },
-      {
-        src: "/bizzlisting/Screenshot 2025-05-13 at 05-34-16 Bizzlisting - Business Directory for Service Providers & Vendors.png",
-        alt: "full home page",
-        description: "Full Home page preview.",
-      },
+      }
     ],
   },
   // Add more projects here
