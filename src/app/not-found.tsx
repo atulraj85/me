@@ -16,7 +16,7 @@ export default function NotFoundPage() {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-secondary/10 p-4">
+    <div className=" flex items-center justify-center bg-gradient-to-b from-background to-secondary/10">
       <div className="max-w-3xl mx-auto text-center">
         {/* Meditating Guru SVG Animation */}
         <motion.div

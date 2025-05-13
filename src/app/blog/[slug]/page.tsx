@@ -9,7 +9,7 @@ import { Suspense } from "react";
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+  return posts.map((post) => ({ slug: post?.slug }));
 }
 
 export async function generateMetadata({
@@ -106,30 +106,35 @@ export default async function Blog({
       ></article>
       {/* Back to Projects Link */}
 
-
-
-
       <div className="flex flex-col space-y-4 p-6">
-      <a
-        href={`/projects/${post.slug}`}
-        className="inline-flex items-center px-4 py-2 rounded-lg bg-black text-white font-medium transition-all hover:bg-gray-800 hover:shadow-lg group max-w-fit"
-      >
-        <ArrowLeft className="mr-2 h-5 w-5 group-hover:translate-x-[-2px]" />
-        Back to Project
-      </a>
-      
-      <a
-        href="/blog"
-        className="inline-flex items-center px-4 py-2 rounded-lg border-2 border-black text-black font-medium transition-all hover:bg-gray-100 hover:shadow-md max-w-fit"
-      >
-        <svg className="mr-2 h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-          <polyline points="16 17 21 12 16 7"></polyline>
-          <line x1="21" y1="12" x2="9" y2="12"></line>
-        </svg>
-        Show all Blogs
-      </a>
-    </div>
+        <a
+          href={`/projects/${post.slug}`}
+          className="inline-flex items-center px-4 py-2 rounded-lg bg-black text-white font-medium transition-all hover:bg-gray-800 hover:shadow-lg group max-w-fit"
+        >
+          <ArrowLeft className="mr-2 h-5 w-5 group-hover:translate-x-[-2px]" />
+          Back to Project
+        </a>
+
+        <a
+          href="/blog"
+          className="inline-flex items-center px-4 py-2 rounded-lg border-2 border-black text-black font-medium transition-all hover:bg-gray-100 hover:shadow-md max-w-fit"
+        >
+          <svg
+            className="mr-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          Show all Blogs
+        </a>
+      </div>
     </section>
   );
 }
