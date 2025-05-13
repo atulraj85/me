@@ -3,15 +3,15 @@ import { ProjectDetails } from "@/lib/types";
 // Projects data
 export const projects: ProjectDetails[] = [
     {
-      name: 'Personal Portfolio Website',
-      slug: 'portfolio-website',
-      description: 'A responsive and modern personal portfolio showcasing my projects and skills',
-      technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-      dates: 'May 2024 - Present',
-      image: '/api/placeholder/500/300',
+      name: 'Bizzlisting',
+      slug: 'bizzlisting',
+      description: 'Business directory web application for local businesses to get online presence.',
+      technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', "Data Scrapping", "Apify"],
+      dates: 'March - 2025',
+      image: '/bizzlisting/image.png',
       links: {
-        github: 'https://github.com/yourusername/portfolio',
-        live: 'https://yourportfolio.com'
+        // github: '',
+        live: 'https://www.bizzlisting.com/Delhi'
       }
     },
     {
