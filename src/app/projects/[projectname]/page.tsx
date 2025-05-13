@@ -16,6 +16,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { projectData } from "@/data/projects/projectDetails";
+import { notFound } from "next/navigation";
 
 export default function ProjectPage({
   params,
@@ -31,18 +32,24 @@ export default function ProjectPage({
 
   const project = projectData[params.projectname];
 
+  // if (!project) {
+  //   return (
+
+  //     <div className="container mx-auto px-4 py-16 text-center">
+  //       <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
+  //       <Link
+  //         href="/projects"
+  //         className="inline-flex items-center text-primary hover:underline"
+  //       >
+  //         <ArrowLeft className="mr-2" /> Back to Projects
+  //       </Link>
+  //     </div>
+  //   );
+  // }
+
+
   if (!project) {
-    return (
-      <div className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
-        <Link
-          href="/projects"
-          className="inline-flex items-center text-primary hover:underline"
-        >
-          <ArrowLeft className="mr-2" /> Back to Projects
-        </Link>
-      </div>
-    );
+    return notFound();
   }
 
   const openLightbox = (
