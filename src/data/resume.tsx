@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { ResumeIcon } from "@radix-ui/react-icons";
+import { File, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Atul Raj",
@@ -23,6 +24,8 @@ export const DATA = {
     "C++",
   ],
   navbar: [
+
+    { href: "https://rxresu.me/masterbustter/atul-raj-2025-cv", icon: File, label: "CV" },
     { href: "/", icon: HomeIcon, label: "Home" },
     {
       href: "https://curator.thebigocommunity.org/en/",
