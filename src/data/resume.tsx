@@ -24,8 +24,11 @@ export const DATA = {
     "C++",
   ],
   navbar: [
-
-    { href: "https://rxresu.me/masterbustter/atul-raj-2025-cv", icon: File, label: "CV" },
+    {
+      href: "https://rxresu.me/masterbustter/atul-raj-2025-cv",
+      icon: File,
+      label: "CV",
+    },
     { href: "/", icon: HomeIcon, label: "Home" },
     {
       href: "https://curator.thebigocommunity.org/en/",
@@ -75,18 +78,6 @@ export const DATA = {
       description:
         "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
     },
-    // {
-    //   company: "Shopify",
-    //   badges: [],
-    //   href: "https://shopify.com",
-    //   location: "Remote",
-    //   title: "Software Engineer",
-    //   logoUrl: "/shopify.svg",
-    //   start: "January 2021",
-    //   end: "April 2021",
-    //   description:
-    //     "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    // },
   ],
   education: [
     {
@@ -146,51 +137,65 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "The Big O Company",
+      dates: "May 2025",
+      location: "Online",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+        "Branding, Web, Mobile, Desktop. Designing, Development, Testing.",
+      image: "/startups/image.png",
       links: [
         {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          title: "The Big O Company",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://company.thebigocommunity.org/",
+        },
+      ],
+    },
+    {
+      title: "The Essential Foundation",
+      dates: "March 2025",
+      location: "Online",
+      description:
+        "Roti, Kapda, Makaan and WiFi in most organic, environmentally friendly, sustainable and ethical way.",
+      image: "/startups/TEF.webp",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [
+        {
+          title: "The Essential Foundation",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://essentials.thebigocommunity.org/",
+        },
+      ],
+    },
+    {
+      title: "The DIY Community",
+      dates: "April 2025",
+      location: "Online",
+      description:
+        "A builders and creators community. To create a world where people have the confidence, tools, and knowledge to build and fix things themselves! 🌟",
+      image: "/startups/TDIYC.webp",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [
+        {
+          title: "The DIY Community",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://doity.thebigocommunity.org/",
+        },
+      ],
+    },
+    {
+      title: "The Protector",
+      dates: "April 2025",
+      location: "Online",
+      description:
+        "Human need protection from harsh environments, construction, machines and many more. The Protector is the shield which cares for them. ",
+      icon: "public",
+      image: "/startups/The Protector.webp",
+      links: [
+        {
+          title: "The Protector",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://protector.thebigocommunity.org/",
         },
       ],
     },
