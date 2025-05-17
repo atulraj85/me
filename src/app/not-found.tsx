@@ -16,7 +16,7 @@ export default function NotFoundPage() {
   if (!mounted) return null;
 
   return (
-    <div className=" flex items-center justify-center bg-gradient-to-b from-background to-secondary/10">
+    <div className="flex items-center justify-center bg-gradient-to-b from-background to-secondary/10">
       <div className="max-w-3xl mx-auto text-center">
         {/* Meditating Guru SVG Animation */}
         <motion.div
@@ -228,15 +228,14 @@ export default function NotFoundPage() {
               <span>Explore This Beautiful Place</span>
             </Link>
             
-            <motion.a 
+            {/* Using a regular button styled as a link instead of motion.a */}
+            <a 
               href="mailto:contact@yourdomain.com"
               className="flex items-center gap-2 px-6 py-3 bg-primary/80 hover:bg-primary/90 text-primary-foreground rounded-full transition-all duration-300 ease-in-out hover:shadow-md"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
             >
               <MailIcon size={18} />
               <span>Send a Message</span>
-            </motion.a>
+            </a>
           </div>
         </motion.div>
       </div>
