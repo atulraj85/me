@@ -20,7 +20,6 @@ export async function generateMetadata({
   };
 }): Promise<Metadata | undefined> {
   let post = await getPost(params.slug);
-
   let {
     title,
     publishedAt: publishedTime,
@@ -28,7 +27,7 @@ export async function generateMetadata({
     image,
   } = post.metadata;
   let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
-
+  
   return {
     title,
     description,
@@ -61,11 +60,10 @@ export default async function Blog({
   };
 }) {
   let post = await getPost(params.slug);
-
   if (!post) {
     notFound();
   }
-
+  
   return (
     <section id="blog">
       <script
@@ -104,23 +102,23 @@ export default async function Blog({
         className="prose dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: post.source }}
       ></article>
+      
       {/* Back to Projects Link */}
-
       <div className="flex flex-col space-y-4 p-6">
-        <a
+        <Link
           href={`/projects/${post.slug}`}
           className="inline-flex items-center px-4 py-2 rounded-lg bg-black text-white font-medium transition-all hover:bg-gray-800 hover:shadow-lg group max-w-fit"
         >
           <ArrowLeft className="mr-2 h-5 w-5 group-hover:translate-x-[-2px]" />
-          Back to Project
-        </a>
-
-        <a
+          <span>Back to Project</span>
+        </Link>
+        
+        <Link
           href="/blog"
           className="inline-flex items-center px-4 py-2 rounded-lg border-2 border-black text-black font-medium transition-all hover:bg-gray-100 hover:shadow-md max-w-fit"
         >
           <svg
-            className="mr-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+            className="mr-2 h-5 w-5"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -132,8 +130,8 @@ export default async function Blog({
             <polyline points="16 17 21 12 16 7"></polyline>
             <line x1="21" y1="12" x2="9" y2="12"></line>
           </svg>
-          Show all Blogs
-        </a>
+          <span>Show all Blogs</span>
+        </Link>
       </div>
     </section>
   );
