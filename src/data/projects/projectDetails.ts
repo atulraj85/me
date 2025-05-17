@@ -58,8 +58,8 @@ export const projectData: { [key: string]: ProjectDetails } = {
     ],
   },
   astrologyconsulting: {
-    slug:'bizzlisting',
-    name: "Bizzlisting",
+    slug:'astrologyconsulting',
+    name: "Astrology Consulting",
     image: '/bizzlisting/image.png',
 
     description:
@@ -86,7 +86,7 @@ export const projectData: { [key: string]: ProjectDetails } = {
       repo: "",
       live: "https://www.bizzlisting.com/Delhi",
     },
-    dates: "March - 2025",
+    dates: "December - 2025",
     screenshots: [
       {
         src: "/bizzlisting/image copy.png",
@@ -112,7 +112,60 @@ export const projectData: { [key: string]: ProjectDetails } = {
       }
     ],
   },
+  thelibrary: {
+    slug:'thelibrary',
+    name: "The Library",
+    image: '/bizzlisting/image.png',
 
+    description:
+      "Curated guides and Fullstack components for reusable purpose",
+    longDescription: `
+        Here i have priorities on FOSS, Free and Open Source alternatives of mainstream application so that developers can easily access the source code of the tool they are using, this will further help the overall growth and web community
+      `,
+    technologies: [
+      "MarkDown",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Shadcn UI",
+      "Zustand",
+      "Data Scrapping",
+      "Prisma",
+      "Apify",
+      "SEO",
+    ],
+    links: {
+      repo: "https://codeberg.org/the-library-node",
+      live: "",
+    },
+    dates: "February 2025 - Present",
+    screenshots: [
+      {
+        src: "/bizzlisting/image copy.png",
+        alt: "Homepage Overview",
+        description:
+          "Clean and modern homepage layout with modern service categories and advertisements.",
+      },
+      {
+        src: "/bizzlisting/image copy 2.png",
+        alt: "Services Page",
+        description:
+          "Detailed services page with filters and service providers.",
+      },
+      {
+        src: "/bizzlisting/image copy 3.png",
+        alt: "Services Page",
+        description: "Service providers listing.",
+      },
+      {
+        src: "/bizzlisting/image copy 4.png",
+        alt: "Beautiful Footer",
+        description: "Footer with Dynamic City data.",
+      }
+    ],
+  },
   // Add more projects here
 };
 
