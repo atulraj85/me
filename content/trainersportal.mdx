@@ -1,0 +1,155 @@
+---
+title: "Trainer's Portal"
+publishedAt: "2025-01-17"
+summary: "A type of Resume Builder but for Trainers."
+---
+
+![](/trainerportal/image.png)
+
+# Trainer Registration Portal Project
+
+## Project Overview
+
+The Trainer Registration Portal is a comprehensive web application designed to connect corporate trainers with organizations seeking training services. Built for Gennext and potentially expandable to other companies, this platform serves as a centralized hub for trainer discovery, profile management, and service coordination.
+
+### ERD
+
+The Entity Relationship Diagram can be viewed [here](https://dbdiagram.io/d/Trainer-Project-679a0ba0263d6cf9a0648abe).
+
+## Project Scope & Features
+
+### Core Functionalities
+
+#### For Trainers
+- **Profile Registration**: Complete registration with personal, professional, and banking details
+- **Profile Management**: View and share customizable profile pages
+- **Comprehensive Data Capture**: Over 50 data points including skills, experience, rate cards, and availability
+
+#### For Administrators
+- **Full CRUD Operations**: Complete trainer profile management capabilities
+- **System Oversight**: Monitor platform usage and maintain data integrity
+
+#### For Normal Users (Corporate Clients)
+- **Advanced Search**: Find trainers by skill, domain, expertise, or location
+- **Profile Review**: Access detailed trainer profiles, rate cards, and contact information
+- **Download Management**: Download up to 5 profiles at once with daily limits (max 10)
+- **Usage Dashboard**: Track views and downloads with real-time analytics
+- **Contact Logging**: Automatic logging when trainer contact details are accessed
+
+#### Future Enhancements
+- **Company Portal**: Dedicated login for organizations to submit training requirements
+- **Requirement Matching**: AI-powered trainer recommendations based on company needs
+- **Contract Management**: Integrated PO generation and contract handling
+
+## Technical Stack & Architecture
+
+### Backend Development
+- **Schema Design**: Implemented comprehensive data models using Prisma ORM
+- **API Development**: Built RESTful APIs using ZenStack framework
+- **Database**: Structured to handle complex trainer profiles and user interactions
+
+### Frontend Development
+- **UI Framework**: React-based user interface
+- **State Management**: TanStack React Query for efficient data fetching and caching
+- **Responsive Design**: Mobile-friendly interface for all user types
+
+## My Contribution & Role
+
+### Backend Development
+- **Database Schema Design**: Created comprehensive Prisma schema covering all trainer registration requirements including:
+  - Personal information models
+  - Skills and expertise tracking
+  - Corporate experience management
+  - Training portfolio structures
+  - Rate card configurations
+  - Banking and payment details
+  
+- **API Development with ZenStack**: Implemented robust API endpoints using ZenStack framework, providing:
+  - CRUD operations for trainer profiles
+  - Advanced search and filtering capabilities
+  - User authentication and authorization
+  - Download tracking and limitations
+  - Contact viewing log generation
+
+### Frontend Development
+- **User Interface Implementation**: Developed React components for:
+  - Trainer registration forms
+  - Profile display and management
+  - Search and filtering interfaces
+  - User dashboards with analytics
+  
+- **TanStack React Query Integration**: Implemented efficient data management using TanStack React Query for:
+  - Optimized API calls
+  - Intelligent caching strategies
+  - Real-time data synchronization
+  - Error handling and loading states
+
+## Learning Experience & Technology Insights
+
+### ZenStack Framework
+Working with ZenStack was a transformative experience that significantly streamlined the development process. The framework's capabilities made API development remarkably efficient by:
+- **Automated CRUD Generation**: Reduced boilerplate code significantly
+- **Type Safety**: Enhanced code quality with built-in TypeScript support
+- **Schema-First Approach**: Seamless integration with Prisma models
+- **Built-in Authentication**: Simplified user management implementation
+
+### TanStack React Query
+Initially perceived as complex, TanStack React Query proved to be an elegant solution for state management:
+- **Learning Curve**: The initial complexity gave way to appreciation for its powerful features
+- **Performance Benefits**: Significant improvements in application responsiveness
+- **Developer Experience**: Enhanced debugging capabilities and intuitive API design
+- **Caching Strategy**: Intelligent background updates and stale-while-revalidate patterns
+
+### Prisma ORM
+The experience with Prisma for schema design was particularly valuable:
+- **Type-Safe Database Access**: Eliminated runtime database errors
+- **Migration Management**: Smooth database evolution with version control
+- **Complex Relationships**: Efficiently handled intricate data relationships
+- **Performance Optimization**: Built-in query optimization and connection pooling
+
+## Technical Challenges & Solutions
+
+### Complex Data Modeling
+**Challenge**: Designing a schema to capture 50+ trainer attributes across multiple categories
+**Solution**: Created modular, normalized database structure with clear separation of concerns
+
+### Search Optimization
+**Challenge**: Implementing fast, flexible search across multiple trainer attributes
+**Solution**: Utilized database indexing strategies and optimized query patterns with ZenStack
+
+### User Experience
+**Challenge**: Managing complex forms while maintaining user-friendly interface
+**Solution**: Implemented progressive disclosure and step-by-step registration process
+
+### Performance Management
+**Challenge**: Handling potential large datasets with download restrictions
+**Solution**: Implemented efficient pagination, caching strategies, and usage tracking
+
+## Key Achievements
+
+1. **Successful Framework Adoption**: Quickly mastered new technologies (ZenStack, TanStack React Query)
+2. **Comprehensive Feature Implementation**: Delivered all specified functionalities within project timeline
+3. **Scalable Architecture**: Created foundation for future company portal expansion
+4. **User-Centric Design**: Balanced feature richness with usability across all user types
+5. **Performance Optimization**: Achieved responsive performance despite complex data requirements
+
+## Project Impact
+
+The Trainer Registration Portal represents a significant step forward in streamlining corporate training procurement. By providing a centralized platform for trainer discovery and management, the project addresses key pain points in the training industry:
+
+- **For Trainers**: Increased visibility and simplified profile management
+- **For Companies**: Streamlined trainer discovery and evaluation process
+- **For Gennext**: Enhanced service delivery capabilities and potential for expansion
+
+## Future Development Plans
+
+The project foundation supports several planned enhancements:
+- Company-specific portals with custom requirements
+- AI-powered trainer matching algorithms
+- Integrated contract management system
+- Advanced analytics and reporting capabilities
+- Multi-tenant architecture for expanded market reach
+
+---
+
+*This project showcases the power of modern web development tools and methodologies in creating comprehensive business solutions. The experience gained with ZenStack and TanStack React Query has significantly enhanced my full-stack development capabilities and provided valuable insights into enterprise application architecture.*
