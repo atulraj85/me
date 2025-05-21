@@ -137,6 +137,20 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "The Clean One",
+      dates: "May 2025",
+      location: "Online",
+      description:
+        "The Clean individual coming together to Clean Living and Clean Lifestyle doing Clean Walks and Drives for The Clean One Planet.",
+      image: "/startups/TCO.webp",
+      links: [
+        {
+          title: "The Clean One",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://clean.thebigocommunity.org/",
+        },
+      ],
+    }, {
       title: "The Big O Company",
       dates: "May 2025",
       location: "Online",
