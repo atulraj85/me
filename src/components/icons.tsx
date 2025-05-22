@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { GlobeIcon, MailIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, Video } from "lucide-react";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
+  video: (props: IconProps) => <Video {...props} />,
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
   nextjs: (props: IconProps) => (

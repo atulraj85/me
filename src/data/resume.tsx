@@ -155,7 +155,8 @@ export const DATA = {
           href: "https://clean.thebigocommunity.org/",
         },
       ],
-    }, {
+    },
+    {
       title: "The Big O Company",
       dates: "May 2025",
       location: "Online",
@@ -172,7 +173,7 @@ export const DATA = {
     },
     {
       title: "The Essential Foundation",
-      dates: "March 2025",
+      dates: "May 2025",
       location: "Online",
       description:
         "Roti, Kapda, Makaan and WiFi in most organic, environmentally friendly, sustainable and ethical way.",
@@ -183,6 +184,12 @@ export const DATA = {
           title: "The Essential Foundation",
           icon: <Icons.globe className="h-4 w-4" />,
           href: "https://essentials.thebigocommunity.org/",
+        },
+
+        {
+          title: "Videos",
+          icon: <Icons.video className="h-4 w-4" />,
+          href: "https://odysee.com/@thessentialFoundation:7",
         },
       ],
     },
@@ -215,6 +222,86 @@ export const DATA = {
           title: "The Protector",
           icon: <Icons.globe className="h-4 w-4" />,
           href: "https://protector.thebigocommunity.org/",
+        },
+      ],
+    },
+
+    {
+      title: "Freedom Forge Gaming",
+      dates: "March 2025",
+      location: "Online / Noida",
+      description: "Introduction to Computers must be with playing.",
+      icon: "public",
+      image: "/startups/FFG.webp",
+      links: [
+        {
+          title: "Videos",
+          icon: <Icons.video className="h-4 w-4" />,
+          href: "https://odysee.com/@FreedomForgeGaming:b",
+        },
+      ],
+    },
+
+    {
+      title: "DJ Goldbeard",
+      dates: "March 2025",
+      location: "Online / Noida",
+      description: "Your soul will dance.",
+      icon: "public",
+      image: "/startups/DJG.webp",
+      links: [
+        {
+          title: "Videos",
+          icon: <Icons.video className="h-4 w-4" />,
+          href: "https://odysee.com/@DJGoldbeard:3",
+        },
+      ],
+    },
+    {
+      title: "The Silence Initiative",
+      dates: "February 2025",
+      location: "Online",
+      description: "Silence heals just observe quitely. ",
+      icon: "public",
+      image: "/startups/TSI.webp",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://silence.thebigocommunity.org/",
+        },
+
+        {
+          title: "Videos",
+          icon: <Icons.video className="h-4 w-4" />,
+          href: "https://silence.thebigocommunity.org/",
+        },
+      ],
+    },
+
+    {
+      title: "The Big O Community",
+      dates: "July 2023",
+      location: "Online",
+      description: "Liberated software for Liberated lifestyle.",
+      icon: "public",
+      image: "/startups/TBO.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://silence.thebigocommunity.org/",
+        },
+
+        {
+          title: "Videos",
+          icon: <Icons.video className="h-4 w-4" />,
+          href: "https://odysee.com/@TheBigOCommunity:6",
+        },
+        {
+          title: "Old Videos",
+          icon: <Icons.video className="h-4 w-4" />,
+          href: "https://diode.zone/c/the_big_0_community/videos?s=1",
         },
       ],
     },
