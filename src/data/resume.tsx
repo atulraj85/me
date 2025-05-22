@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { ResumeIcon } from "@radix-ui/react-icons";
-import { File, HomeIcon, NotebookIcon } from "lucide-react";
+import { Cross, File, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Atul Raj",
@@ -34,6 +34,11 @@ export const DATA = {
       href: "https://curator.thebigocommunity.org/en/",
       icon: NotebookIcon,
       label: "Blog",
+    },
+    {
+      href: "/needs",
+      icon: Cross,
+      label: "Needs",
     },
   ],
   contact: {
