@@ -101,6 +101,19 @@ const NEEDS_DATA: NeedItem[] = [
         "https://www.amazon.in/Leosportz-Cycle-Carrier-Quick-Release/dp/B0C6J5WH58/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY",
     },
   },
+  {
+    id: "8",
+    name: "Kaleen for Yoga",
+    image: "/needs/image copy 6.png",
+    project: "The Silence Initiative",
+    description: "Light wieght, soft, comfortable mat or kaleen.",
+    priority: "high",
+    category: "Accommodation",
+    links: {
+      reference: "",
+      purchase: "",
+    },
+  },
 ];
 
 const getPriorityColor = (priority: string) => {
