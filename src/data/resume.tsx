@@ -274,7 +274,7 @@ export const DATA = {
         {
           title: "Videos",
           icon: <Icons.video className="h-4 w-4" />,
-          href: "https://silence.thebigocommunity.org/",
+          href: "https://odysee.com/@TheSilenceInitiative:6",
         },
       ],
     },
