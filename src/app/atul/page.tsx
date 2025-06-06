@@ -16,7 +16,7 @@ interface CircleData {
   route: string;
 }
 
-const OrbitingPortfolio: React.FC = () => {
+const OrbitingPortfolio = () => {
   const router = useRouter();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCircle, setHoveredCircle] = useState<string | null>(null);
@@ -99,17 +99,6 @@ const OrbitingPortfolio: React.FC = () => {
       speed: 18,
       route: "/atool",
     },
-    // {
-    //   id: "vasu",
-    //   name: "vasu",
-    //   subtitle: "sexual",
-    //   icon: "💕",
-    //   color: "from-red-400 to-purple-600",
-    //   size: 75,
-    //   orbitRadius: 160,
-    //   speed: 35,
-    //   route: "/vasu",
-    // },
   ];
 
   useEffect(() => {
@@ -124,13 +113,11 @@ const OrbitingPortfolio: React.FC = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const handleCircleClick = (route: string) => {
-    router.push(route);
-  };
+  const handleCircleClick = (route: string) => router.push(route);
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
-      {/* Animated background particles */}
+      {/* Background particles */}
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
           <div
@@ -148,10 +135,9 @@ const OrbitingPortfolio: React.FC = () => {
 
       <div className="flex min-h-screen items-center justify-center p-4">
         <div
-          className="relative"
+          className="relative transition-transform duration-300 ease-out"
           style={{
             transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
-            transition: "transform 0.3s ease-out",
           }}
         >
           {/* Central Circle */}
@@ -160,15 +146,13 @@ const OrbitingPortfolio: React.FC = () => {
               <h1 className="mb-2 text-4xl font-bold text-white drop-shadow-lg">
                 atul
               </h1>
-              <div className="mx-auto h-0.5 w-12 bg-white opacity-75"></div>
+              <div className="mx-auto h-0.5 w-12 bg-white opacity-75" />
             </div>
-
-            {/* Glow effect */}
-            <div className="absolute inset-0 scale-110 animate-ping rounded-full bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 opacity-50"></div>
+            <div className="absolute inset-0 scale-110 animate-ping rounded-full bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 opacity-50" />
           </div>
 
           {/* Orbiting Circles */}
-          {circles.map((circle, index) => {
+          {circles.map((circle) => {
             const angle = (Date.now() / (circle.speed * 100)) % (2 * Math.PI);
             const x = Math.cos(angle) * circle.orbitRadius;
             const y = Math.sin(angle) * circle.orbitRadius;
@@ -178,9 +162,7 @@ const OrbitingPortfolio: React.FC = () => {
                 key={circle.id}
                 className="group absolute cursor-pointer"
                 style={{
-                  transform: `translate(${x - circle.size / 2}px, ${
-                    y - circle.size / 2
-                  }px)`,
+                  transform: `translate(${x - circle.size / 2}px, ${y - circle.size / 2}px)`,
                   left: "50%",
                   top: "50%",
                 }}
@@ -206,13 +188,9 @@ const OrbitingPortfolio: React.FC = () => {
                   style={{
                     width: circle.size,
                     height: circle.size,
-                    transform:
-                      hoveredCircle === circle.id
-                        ? "scale(1.1) rotate(5deg)"
-                        : "scale(1) rotate(0deg)",
+                    transform: hoveredCircle === circle.id ? "scale(1.1) rotate(5deg)" : "scale(1)",
                   }}
                 >
-                  {/* Background image or icon */}
                   {circle.image ? (
                     <div
                       className="absolute inset-2 rounded-full bg-cover bg-center opacity-80"
@@ -222,26 +200,23 @@ const OrbitingPortfolio: React.FC = () => {
                     <div className="text-2xl">{circle.icon}</div>
                   )}
 
-                  {/* Overlay gradient */}
-                  <div className="bg-opacity-20 absolute inset-0 rounded-full bg-black"></div>
-
-                  {/* Content */}
+                  <div className="absolute inset-0 rounded-full bg-black bg-opacity-20" />
+                  
                   <div className="relative z-10 p-2 text-center text-white">
                     <div className="mb-1 text-sm font-bold">{circle.name}</div>
                     <div className="text-xs opacity-90">{circle.subtitle}</div>
                   </div>
 
-                  {/* Hover glow */}
                   {hoveredCircle === circle.id && (
                     <div
                       className={`absolute inset-0 rounded-full bg-gradient-to-br ${circle.color} scale-125 animate-pulse opacity-60`}
-                    ></div>
+                    />
                   )}
                 </div>
 
-                {/* Floating label on hover */}
+                {/* Hover label */}
                 {hoveredCircle === circle.id && (
-                  <div className="bg-opacity-75 animate-fadeIn absolute top-full left-1/2 mt-2 -translate-x-1/2 transform rounded-full bg-black px-3 py-1 text-sm whitespace-nowrap text-white">
+                  <div className="animate-fadeIn absolute top-full left-1/2 mt-2 -translate-x-1/2 transform whitespace-nowrap rounded-full bg-black bg-opacity-75 px-3 py-1 text-sm text-white">
                     Click to visit {circle.name}
                   </div>
                 )}
@@ -255,15 +230,13 @@ const OrbitingPortfolio: React.FC = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 transform text-center text-white opacity-75">
         <div className="mb-2 text-sm">Explore the universe of Atul</div>
         <div className="flex items-center justify-center space-x-2 text-xs">
-          <div className="h-2 w-2 animate-bounce rounded-full bg-white"></div>
-          <div
-            className="h-2 w-2 animate-bounce rounded-full bg-white"
-            style={{ animationDelay: "0.1s" }}
-          ></div>
-          <div
-            className="h-2 w-2 animate-bounce rounded-full bg-white"
-            style={{ animationDelay: "0.2s" }}
-          ></div>
+          {[0, 0.1, 0.2].map((delay) => (
+            <div
+              key={delay}
+              className="h-2 w-2 animate-bounce rounded-full bg-white"
+              style={{ animationDelay: `${delay}s` }}
+            />
+          ))}
         </div>
       </div>
 
