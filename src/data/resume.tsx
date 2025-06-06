@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Software Engineer aiming to be Entrepreneur. Building incredible resources one day and code at a time.",
   summary:
-    "As a tech enthusiast and digital creator, I share my journey through [tech blogs](https://curator.thebigocommunity.org/en/) and open-source advocacy, while expressing my creative side through [design](https://graphics.social/@atool), [photography](https://pixelfed.social/thessential_foundation), and [video production](https://odysee.com/@thessentialFoundation:7). My passion for technology extends to self-hosting my own [cloud](https://cloud.thebigocommunity.org/) and [messaging services](https://comfy.guide/server/prosody/), reflecting my commitment to digital sovereignty. When I'm not coding or designing, I'm either mixing tracks as a [DJ](https://odysee.com/@DJGoldbeard:3), exploring nature on my [bike rides](https://odysee.com/@rightrideway:2), diving into [PC gaming](https://odysee.com/@FreedomForgeGaming:b), or pursuing [spiritual growth](https://odysee.com/@TheSilenceInitiative:6). I love [DIY projects](https://toot.community/@diy) that challenge me to build and fix things myself, embodying my belief that understanding systems from the ground up empowers both myself and others. Through all these diverse interests, I strive to create meaningful connections between technology, creativity, and mindful living. 🚀🎨🌱",
+    "As a tech enthusiast and digital creator, I share my journey through [tech blogs](https://curator.thebigocommunity.org/en/) and open-source advocacy, while expressing my creative side through [design](https://graphics.social/@atool), [photography](https://pixelfed.social/thessential_foundation), and [video production](https://odysee.com/@thessentialFoundation:7). My passion for technology extends to self-hosting my own [cloud](https://cloud.thebigocommunity.org/) and [messaging services](https://comfy.guide/server/prosody/),[groceries management](http://grocery.thebigocommunity.org) reflecting my commitment to digital sovereignty. When I'm not coding or designing, I'm either mixing tracks as a [DJ](https://odysee.com/@DJGoldbeard:3),[singing](https://odysee.com/@ati:1), exploring nature on my [bike rides](https://odysee.com/@rightrideway:2), diving into [PC gaming](https://odysee.com/@FreedomForgeGaming:b), or pursuing [spiritual growth](https://odysee.com/@TheSilenceInitiative:6). I love [DIY projects](https://toot.community/@diy) that challenge me to build and fix things myself, embodying my belief that understanding systems from the ground up empowers both myself and others. Through all these diverse interests, I strive to create meaningful connections between technology, creativity, and mindful living. 🚀🎨🌱",
   avatarUrl: "/me2.jpg",
   skills: [
     "React",
@@ -21,7 +21,8 @@ export const DATA = {
     "Python",
     "Postgres",
     "Podman",
-    "C++",
+    "Flutter",
+    "Frappe Framework"
   ],
   navbar: [
     {
