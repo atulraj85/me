@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useTheme } from "next-themes";
 
 interface CircleData {
   id: string;
@@ -21,6 +22,11 @@ const OrbitingPortfolio = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCircle, setHoveredCircle] = useState<string | null>(null);
 
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("dark");
+  }, []);
   const circles: CircleData[] = [
     {
       id: "atulraj",
@@ -162,7 +168,9 @@ const OrbitingPortfolio = () => {
                 key={circle.id}
                 className="group absolute cursor-pointer"
                 style={{
-                  transform: `translate(${x - circle.size / 2}px, ${y - circle.size / 2}px)`,
+                  transform: `translate(${x - circle.size / 2}px, ${
+                    y - circle.size / 2
+                  }px)`,
                   left: "50%",
                   top: "50%",
                 }}
@@ -188,7 +196,10 @@ const OrbitingPortfolio = () => {
                   style={{
                     width: circle.size,
                     height: circle.size,
-                    transform: hoveredCircle === circle.id ? "scale(1.1) rotate(5deg)" : "scale(1)",
+                    transform:
+                      hoveredCircle === circle.id
+                        ? "scale(1.1) rotate(5deg)"
+                        : "scale(1)",
                   }}
                 >
                   {circle.image ? (
@@ -201,7 +212,7 @@ const OrbitingPortfolio = () => {
                   )}
 
                   <div className="absolute inset-0 rounded-full bg-black bg-opacity-20" />
-                  
+
                   <div className="relative z-10 p-2 text-center text-white">
                     <div className="mb-1 text-sm font-bold">{circle.name}</div>
                     <div className="text-xs opacity-90">{circle.subtitle}</div>
