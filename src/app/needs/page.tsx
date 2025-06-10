@@ -62,18 +62,6 @@ const NEEDS_DATA: NeedItem[] = [
     priority: "high",
     category: "Safety Equipment",
   },
-
-  // Food Feels Good
-  {
-    id: "4",
-    name: "4 tier Tiffin",
-    image: "/needs/image copy 3.png",
-    project: "Food Feels Good",
-    description: "High-capacity 4 tier tiffin for carrying delicous meals.",
-    priority: "high",
-    category: "Kitchen Equipment",
-  },
-
   // The Silence Initiative
   {
     id: "6",
