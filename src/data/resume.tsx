@@ -142,6 +142,21 @@ export const DATA = {
     },
   ],
   hackathons: [
+      {
+      title: "Atulya World",
+      dates: "24 June 2025",
+      location: "Online",
+      description:
+        "One Organization for all. Striding for Incredibility.",
+      image: "/startups/Atulya World Main.png",
+      links: [
+        {
+          title: "Atulya World",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://aw.thebigocommunity.org/",
+        },
+      ],
+    },
     {
       title: "The Clean One",
       dates: "May 2025",
