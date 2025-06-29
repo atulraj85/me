@@ -7,6 +7,7 @@ export const DATA = {
   initials: "AR",
   url: "https://atul.thebigocommunity.org",
   location: "Noida, Uttar Pradesh",
+  identified_by: "he/him/el",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Software Engineer aiming to be Entrepreneur. Building incredible resources one day and code at a time.",
@@ -142,7 +143,22 @@ export const DATA = {
     },
   ],
   hackathons: [
-      {
+    {
+      title: "The Clean Human",
+      dates: "29 June 2025",
+      location: "Online",
+      description:
+        "Listen to nature and let nature clean you.",
+      image: "/startups/TCH3.png",
+      links: [
+        {
+          title: "The Clean Human Site",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://the-clean-human.vercel.app/",
+        },
+      ],
+    },
+    {
       title: "Atulya World",
       dates: "24 June 2025",
       location: "Online",

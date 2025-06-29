@@ -23,6 +23,11 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
+               <BlurFadeText
+                className="max-w-[600px] md:text-md"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.identified_by}
+              />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
