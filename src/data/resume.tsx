@@ -143,6 +143,22 @@ export const DATA = {
     },
   ],
   hackathons: [
+
+     {
+      title: "The Right Ride Way",
+      dates: "09 July 2025",
+      location: "Online",
+      description:
+        "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      image: "/startups/trrw1.png",
+      links: [
+        {
+          title: "The Right Ride Way Site",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://rightride.thebigocommunity.org",
+        },
+      ],
+    },
     {
       title: "The Clean Human",
       dates: "29 June 2025",
