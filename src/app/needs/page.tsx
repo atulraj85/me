@@ -105,7 +105,7 @@ const NEEDS_DATA: NeedItem[] = [
   {
     id: "9",
     name: "Saddle Bag ",
-    image: "/needs/image copy 7.png",
+    image: "/needs/image copy 7.jpg",
     project: "The Right Ride Way",
     description: "A durable saddle bag, waterproof for bike packing",
     priority: "high",
