@@ -102,6 +102,19 @@ const NEEDS_DATA: NeedItem[] = [
       purchase: "",
     },
   },
+  {
+    id: "9",
+    name: "Saddle Bag ",
+    image: "/needs/image copy 7.png",
+    project: "The Right Ride Way",
+    description: "A durable saddle bag, waterproof for bike packing",
+    priority: "high",
+    category: "Travel",
+    links: {
+      reference: "",
+      purchase: "https://www.amazon.in/GR-GOLDEN-RIDERS-Polyester-Bicycle/dp/B07JBK98SK/?_encoding=UTF8&ref_=pd_hp_d_btf_ci_mcx_mr_ca_id_hp_d",
+    },
+  },
 ];
 
 const getPriorityColor = (priority: string) => {
