@@ -139,7 +139,7 @@ const NeedCard = ({ item, delay }: { item: NeedItem; delay: number }) => {
       `Hi Atul,\n\nI'd like to help you with "${item.name}" for your ${item.project} project.\n\nLet me know how I can assist!\n\nBest regards`
     );
     window.open(
-      `mailto:your-email@example.com?subject=${subject}&body=${body}`
+      `mailto:atulraj1010@tutanota.com?subject=${subject}&body=${body}`
     );
   };
 
