@@ -72,23 +72,6 @@ const NEEDS_DATA: NeedItem[] = [
     priority: "high",
     category: "Audio Equipment",
   },
-
-  // The Right_Ride Way
-  {
-    id: "7",
-    name: "Bike Carrier",
-    image: "/needs/image copy 5.png",
-    project: "The Right_Ride Way",
-    description: "Carrier, so that i can carry more loads of assets.",
-    priority: "high",
-    category: "Transportation",
-    links: {
-      reference:
-        "https://www.amazon.in/Leosportz-Cycle-Carrier-Quick-Release/dp/B0C6J5WH58/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY9",
-      purchase:
-        "https://www.amazon.in/Leosportz-Cycle-Carrier-Quick-Release/dp/B0C6J5WH58/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY",
-    },
-  },
   {
     id: "8",
     name: "Kaleen for Yoga",
