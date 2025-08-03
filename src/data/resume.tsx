@@ -80,7 +80,7 @@ export const DATA = {
       location: "Noida, Uttar Pradesh",
       title: "FullStack Web Engineer",
       logoUrl: "/Gennext IT logo.png",
-      start: "June 2023",
+      start: "June 2024",
       end: "",
       description:
         "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
@@ -338,7 +338,7 @@ export const DATA = {
         {
           title: "Website",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://silence.thebigocommunity.org/",
+          href: "https://www.thebigocommunity.org/",
         },
 
         {
