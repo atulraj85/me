@@ -10,9 +10,9 @@ export const DATA = {
   identified_by: "he/him/el",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer aiming to be Entrepreneur. Building incredible resources one day and code at a time.",
+    "An Earthling aiming to be Entrepreneur, Buddha, Rich, Visionary, Innovator, Changemaker, and what not. Building incredible resources one day and code at a time while creating meaningful impact across technology, creativity, and mindful living.",
   summary:
-    "As a tech enthusiast and digital creator, I share my journey through [tech blogs](https://curator.thebigocommunity.org/en/) and open-source advocacy, while expressing my creative side through [design](https://graphics.social/@atool), [photography](https://pixelfed.social/thessential_foundation), and [video production](https://odysee.com/@thessentialFoundation:7). My passion for technology extends to self-hosting my own [cloud](https://cloud.thebigocommunity.org/) and [messaging services](https://comfy.guide/server/prosody/),[groceries management](http://grocery.thebigocommunity.org) reflecting my commitment to digital sovereignty. When I'm not coding or designing, I'm either mixing tracks as a [DJ](https://odysee.com/@DJGoldbeard:3), [singing](https://odysee.com/@ati:1), exploring nature on my [bike rides](https://odysee.com/@rightrideway:2), diving into [PC gaming](https://odysee.com/@FreedomForgeGaming:b), or pursuing [spiritual growth](https://odysee.com/@TheSilenceInitiative:6). I love [DIY projects](https://toot.community/@diy) that challenge me to build and fix things myself, embodying my belief that understanding systems from the ground up empowers both myself and others. Through all these diverse interests, I strive to create meaningful connections between technology, creativity, and mindful living. 🚀🎨🌱",
+    "As a tech enthusiast and digital creator, I share my journey through [tech blogs](https://curator.thebigocommunity.org/en/) and open-source advocacy. I primarily use FOSS tools and recommend [F-Droid](https://f-droid.org/), [Simplex](https://simplex.chat/), [Grayjay](https://grayjay.app/), and [GrapheneOS](https://grapheneos.org/) for digital sovereignty. I'm building [Atulya World](https://aw.thebigocommunity.org/) where your incredible side is nurtured, and you can find more at [Atulya Globe](https://atul.tboc.work/). When I'm not coding, I'm mixing tracks as a [DJ](https://odysee.com/@DJGoldbeard:3), [singing](https://odysee.com/@ati:1), exploring nature on my [bike rides](https://odysee.com/@rightrideway:2), diving into [PC gaming](https://odysee.com/@FreedomForgeGaming:b), or pursuing [spiritual growth](https://odysee.com/@TheSilenceInitiative:6). I love [DIY projects](https://toot.community/@diy) that challenge me to build and fix things myself, embodying my belief that understanding systems from the ground up empowers both myself and others. Through all these diverse interests, I strive to create meaningful connections between technology, creativity, and mindful living. 🚀🎨🌱",
   avatarUrl: "/me2.jpg",
   skills: [
     "React",
@@ -45,7 +45,7 @@ export const DATA = {
   ],
   contact: {
     email: "atulraj1010@tutanota.com",
-    // tel: "+123456789",
+    tel: "+91 9871647414",
     social: {
       Codeberg: {
         name: "Codeberg",
@@ -143,6 +143,21 @@ export const DATA = {
     },
   ],
   hackathons: [
+      {
+      title: "The Big O Company",
+      dates: "March 2026",
+      location: "Online",
+      description:
+        "Branding, Web, Mobile, Desktop. Designing, Development, Testing.",
+      image: "/startups/tboc.jpg",
+      links: [
+        {
+          title: "The Big O Company",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://tboc.work/",
+        },
+      ],
+    },
 
      {
       title: "The Right Ride Way",
@@ -201,21 +216,6 @@ export const DATA = {
           title: "The Clean One",
           icon: <Icons.globe className="h-4 w-4" />,
           href: "https://clean.thebigocommunity.org/",
-        },
-      ],
-    },
-    {
-      title: "The Big O Company",
-      dates: "May 2025",
-      location: "Online",
-      description:
-        "Branding, Web, Mobile, Desktop. Designing, Development, Testing.",
-      image: "/startups/image.png",
-      links: [
-        {
-          title: "The Big O Company",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://company.thebigocommunity.org/",
         },
       ],
     },
